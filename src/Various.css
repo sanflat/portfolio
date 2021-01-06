@@ -1,0 +1,12 @@
+.backgroundBase {
+  width: 100%;
+  font-size: 12px !important;
+  font-family: Dosis !important;
+  background-color: #f9f9f9 !important;
+  letter-spacing: 1px; }
+
+.backgroundAntonym {
+  background-color: #f9f9f9 !important; }
+
+.headerColor {
+  color: #aaaaaa !important; }
