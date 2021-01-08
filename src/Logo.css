@@ -1,0 +1,23 @@
+.logo {
+  width: 100%;
+  text-align: center;
+  padding: 300px 0px 300px 0px;
+  font-size: 30px;
+  letter-spacing: 3px; }
+  .logo h1 {
+    display: inline;
+    font-weight: normal; }
+  .logo a {
+    outline: none;
+    text-decoration: none;
+    line-height: 1;
+    color: #231815;
+    font-size: 20px;
+    font-family: Dosis !important; }
+  .logo span {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: normal;
+    color: #aaaaaa;
+    font-size: 12px; }

@@ -1,29 +1,31 @@
 ///////////////mixin////////////////
 //文字サイズ
 @mixin fontSize($size:12px) {
-  font-size: $size !important;
+  font-size: $size;
 }
 
 //背景色
-@mixin backgroundColor($color:#f9f9f9) {
-  background-color: $color !important;
+@mixin backgroundColor($color:white) {
+  background-color: $color;
 }
 
 //文字色
 @mixin fontColor($color:#aaaaaa) {
-  color: $color !important;
+  color: $color;
 }
 
 //文字
 @mixin fontFamily($font:Dosis) {
-  font-family: $font !important;
+  font-family: $font;
 }
 
 ///////////////ここまで////////////////
 
 
-.backgroundBase{
+.base{
   width: 100%;
+  display: block;
+  margin: 0;
   @include fontSize();
   @include fontFamily();
   @include backgroundColor();

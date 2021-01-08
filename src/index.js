@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Various.css';
-import App from './App';
 import Header from './Header';
+import Logo from './Logo';
+import Wrapper from './Wrapper';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-  <div className="backgroundBase">
+  <div className="base">
     <Header />
+    <Logo />
+    <Wrapper />
+    {/*<About />*/}
+
   </div>
   </React.StrictMode>,
   document.getElementById('root')

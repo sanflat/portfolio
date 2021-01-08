@@ -1,0 +1,12 @@
+.wrapper {
+  padding-top: 100px;
+  margin: 0px auto 0px auto;
+  background-color: #f9f9f9; }
+  .wrapper .margin {
+    display: flex;
+    margin: 10px; }
+  .wrapper .card {
+    margin: 10px;
+    width: 240px; }
+  .wrapper .card_media {
+    height: 40px; }

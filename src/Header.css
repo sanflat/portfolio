@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  background-color: #f9f9f9; }
+  .header dl {
+    width: 100%;
+    font-size: 10px;
+    letter-spacing: 1px;
+    top: 10px; }
+  .header a {
+    display: inline;
+    line-height: 1;
+    outline: none;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: normal;
+    zoom: 1;
+    margin-right: 30px;
+    color: #aaaaaa; }
+  .header dd {
+    float: right;
+    margin-left: auto;
+    display: block;
+    margin-inline-start: 40px; }

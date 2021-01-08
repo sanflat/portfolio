@@ -1,0 +1,59 @@
+///////////////mixin////////////////
+//文字サイズ
+@mixin fontSize($size:12px) {
+  font-size: $size ;
+}
+
+//マージン
+@mixin margin($top:0px,$right:0px,$bottom:0px,$left:0px) {
+  margin: $top $right $bottom $left;
+}
+
+
+//背景色
+@mixin backgroundColor($color:#f9f9f9) {
+  background-color: $color;
+}
+
+//文字色
+@mixin fontColor($color:#aaaaaa) {
+  color: $color;
+}
+
+//文字
+@mixin fontFamily($font:Dosis) {
+  font-family: $font !important;
+}
+
+///////////////ここまで////////////////
+
+.logo{
+  width: 100%;
+  text-align: center;
+  padding: 300px 0px 300px 0px;
+  font-size: 30px;
+  letter-spacing: 3px;
+
+  h1{
+    display: inline;
+    font-weight: normal;
+  }
+
+  a{
+    outline: none;
+    text-decoration: none;
+    line-height: 1;
+    @include fontColor($color:#231815);
+    @include fontSize($size:20px);
+    @include fontFamily();
+  }
+
+  span{
+    padding-top: 5px;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: normal;
+    @include fontColor($color:#aaaaaa);
+    @include fontSize($size:12px);
+  }
+}
