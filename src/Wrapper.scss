@@ -28,12 +28,24 @@
 ///////////////ここまで////////////////
 
 .wrapper{
-  padding-top: 100px;
+  padding-top: 50px;
   @include margin($top:0px,$right:auto,$bottom:0px,$left:auto);
   @include backgroundColor();
 
+  .works{
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: normal;
+    padding-bottom: 10px;
+    @include fontColor($color:#aaaaaa);
+    @include fontSize($size:16px);
+  }
+
   .margin{
     display: flex;
+    justify-content: center;
     margin: 10px;
   }
 
@@ -43,6 +55,34 @@
   }
 
   .card_media{
-    height: 40px;
+    height: 100px;
+  }
+
+  .code_view{
+    margin-left: 1vw;
+  }
+
+  .skill-margin{
+    width: 100%;
+    position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    div{
+      -webkit-transform: translateY(5%) translateX(30%);
+      @include fontColor($color:#231815);
+      @include fontSize($size:13px);
+      @include fontFamily();
+    }
+  }
+  .skill{
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: normal;
+    padding-bottom: 10px;
+    @include fontColor($color:#aaaaaa);
+    @include fontSize($size:16px);
   }
 }

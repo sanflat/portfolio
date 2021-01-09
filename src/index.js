@@ -4,6 +4,7 @@ import './Various.css';
 import Header from './Header';
 import Logo from './Logo';
 import Wrapper from './Wrapper';
+import About from './About';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -12,8 +13,7 @@ ReactDOM.render(
     <Header />
     <Logo />
     <Wrapper />
-    {/*<About />*/}
-
+    <About />
   </div>
   </React.StrictMode>,
   document.getElementById('root')

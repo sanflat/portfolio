@@ -7,7 +7,7 @@ function Header() {
           <dl>
               <dd>
                   <a href="#Works">WORKS</a>
-                  <a href="#Concept">CONCEPT</a>
+                  <a href="#Skill">SKILL</a>
                   <a href="#Profile">PROFILE</a>　
               </dd>
           </dl>
