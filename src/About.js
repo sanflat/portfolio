@@ -17,7 +17,7 @@ function About() {
                   ビジネスとエンジニアの両方の視点から、結果に拘った無駄のない開発にコミットしています。
               </p>
               <p className="">
-                  CONTACT：hogehoge@gmail.com
+                  CONTACT：tradeforce0720@gmail.com
               </p>
           </div>
       </div>
