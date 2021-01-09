@@ -1,11 +1,21 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">[ portfolio ]</h3>
+<h4 align="center">-  myport folio @2021year -</h4> 
 
-## Available Scripts
+<p align="center">
+<img width="640px" alt="Group 1303-black" src="">
+</p>
 
-In the project directory, you can run:
+## Description
+<p>
+サボっていた個人開発を頑張って、</br>
+客観的に評価をいただけるようポートフォリオを育てる。
+</p>
 
+<h4 align="center">- portforio System Technology-</h4> 
+<p align="center">
+<img width="30%" height="200px" alt="React" src="https://user-images.githubusercontent.com/73631392/103876070-89ebe280-5116-11eb-8ae9-83217bab8cea.png">
+    
 ### `yarn start`
 
 Runs the app in the development mode.\
