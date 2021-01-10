@@ -69,6 +69,7 @@
     padding-bottom: 50px;
 
     div{
+      width: 100%;
       -webkit-transform: translateY(5%) translateX(30%);
       @include fontColor($color:#231815);
       @include fontSize($size:13px);

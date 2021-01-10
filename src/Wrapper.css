@@ -28,6 +28,7 @@
     padding-top: 50px;
     padding-bottom: 50px; }
     .wrapper .skill-margin div {
+      width: 100%;
       -webkit-transform: translateY(5%) translateX(30%);
       color: #231815;
       font-size: 13px;

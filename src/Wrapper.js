@@ -10,23 +10,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Chip from '@material-ui/core/Chip';
 import Paper from '@material-ui/core/Paper';
 import GitHubIcon from '@material-ui/icons/GitHub';
-// import Modal from '@material-ui/core/Modal';
+import Link from '@material-ui/core/Link';
 import './Wrapper.css';
-
-function rand() {
-    return Math.round(Math.random() * 20) - 10;
-}
-
-function getModalStyle() {
-    const top = 50 + rand();
-    const left = 50 + rand();
-
-    return {
-        top: `${top}%`,
-        left: `${left}%`,
-        transform: `translate(-${top}%, -${left}%)`,
-    };
-}
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -53,32 +38,23 @@ const useStyles = makeStyles((theme) => ({
 function Wrapper() {
 
     const classes = useStyles();
-    const [modalStyle] = React.useState(getModalStyle);
-    const [open, setOpen] = React.useState(false);
-    const [chipData] = React.useState([
+    const [chipData1] = React.useState([
         { key: 0, label: 'React' },
         { key: 1, label: 'Sass' },
         { key: 2, label: 'Material-UI' },
     ]);
-    const handleOpen = () => {
-        setOpen(true);
-    };
-    const handleClose = () => {
-        setOpen(false);
-    };
-    const body = (
-        <div style={modalStyle} className={classes.paper}>
-            <h2 id="simple-modal-title">Text in a modal</h2>
-            <p id="simple-modal-description">
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </p>
-        </div>
-    );
+    const [chipData2] = React.useState([
+        { key: 0, label: 'HTML5' },
+        { key: 1, label: 'Sass' },
+        { key: 2, label: 'JQuery' },
+    ]);
+
   return (
       <div className="wrapper">
           <a id="Works" className="works">- WORKS -</a>
           <div className="margin">
               <Card className="card">
+                  <Link href="https://master.d1ltu26ki4tmkb.amplifyapp.com/">
                   <CardActionArea>
                       <CardMedia
                           className="card_media"
@@ -91,7 +67,7 @@ function Wrapper() {
                           </Typography>
                           <Typography variant="body2" color="textSecondary" component="p">
                               <Paper component="ul" className={classes.root}>
-                                  {chipData.map((data) => {
+                                  {chipData1.map((data) => {
                                       return (
                                           <li key={data.key}>
                                               <Chip
@@ -105,22 +81,48 @@ function Wrapper() {
                           </Typography>
                       </CardContent>
                   </CardActionArea>
+                  </Link>
                   <CardActions>
                       <Button href="https://github.com/sanflat/portfolio" size="small" color="LINK">
                           <GitHubIcon />
                           <p className="code_view">code view</p>
                       </Button>
-                      {/*<button type="button" onClick={handleOpen}>*/}
-                      {/*    show more*/}
-                      {/*</button>*/}
-                      {/*<Modal*/}
-                      {/*    open={open}*/}
-                      {/*    onClose={handleClose}*/}
-                      {/*    aria-labelledby="simple-modal-title"*/}
-                      {/*    aria-describedby="simple-modal-description"*/}
-                      {/*>*/}
-                      {/*    {body}*/}
-                      {/*</Modal>*/}
+                  </CardActions>
+              </Card>
+              <Card className="card">
+                  <Link href="https://master.df3wue0oj9d4e.amplifyapp.com/">
+                      <CardActionArea>
+                          <CardMedia
+                              className="card_media"
+                              image="./portfolio_base.png"
+                              title="Contemplative Reptile"
+                          />
+                          <CardContent>
+                              <Typography gutterBottom variant="h5" component="h2">
+                                  portfolio_base
+                              </Typography>
+                              <Typography variant="body2" color="textSecondary" component="p">
+                                  <Paper component="ul" className={classes.root}>
+                                      {chipData2.map((data) => {
+                                          return (
+                                              <li key={data.key}>
+                                                  <Chip
+                                                      label={data.label}
+                                                      className={classes.chip}
+                                                  />
+                                              </li>
+                                          );
+                                      })}
+                                  </Paper>
+                              </Typography>
+                          </CardContent>
+                      </CardActionArea>
+                  </Link>
+                  <CardActions>
+                      <Button href="https://github.com/sanflat/portfolio_base" size="small" color="LINK">
+                          <GitHubIcon />
+                          <p className="code_view">code view</p>
+                      </Button>
                   </CardActions>
               </Card>
           </div>
@@ -131,6 +133,7 @@ function Wrapper() {
                   <p>[DB]: MySQL</p>
                   <p>[SCM]: Git</p>
                   <p>[LANGUAGE]: Java 8 / PHP7 / Ruby2.6</p>
+                  <p>[STYLE/MARKUP]: HTML / HTML5 / CSS3 / Sass</p>
                   <p>[FW]: Play 2 Framework / Laravel6 / Ruby on Rails5 / Spring Boot</p>
                   <p>[UI-FW]: Bootstrap / JavaScript / TypeScript / jQuery / React.js / Redux / webpack 4</p>
                   <p>[INFRA]: AWS / VPS / Docker</p>
