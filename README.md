@@ -5,7 +5,8 @@
 ## Description
 <p>
 サボっていた個人開発を頑張って、</br>
-客観的に評価をいただけるようポートフォリオを育てる。
+客観的に評価をいただけるようポートフォリオを育てます。
+技術はReactとSass。
 </p>
 
 <h4 align="center">- portforio System Technology-</h4> 
