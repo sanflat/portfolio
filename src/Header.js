@@ -6,9 +6,9 @@ function Header() {
       <div className="header">
           <dl>
               <dd>
-                  <a href="#Works">WORKS</a>
-                  <a href="#Skill">SKILL</a>
-                  <a href="#Profile">PROFILE</a>　
+                  <a className="js-smooth-scroll" href="#Works">WORKS</a>
+                  <a className="js-smooth-scroll" href="#Skill">SKILL</a>
+                  <a className="js-smooth-scroll" href="#Profile">PROFILE</a>　
               </dd>
           </dl>
       </div>
