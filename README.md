@@ -2,10 +2,6 @@
 <h3 align="center">[ portfolio ]</h3>
 <h4 align="center">-  myport folio @2021year -</h4> 
 
-<p align="center">
-<img width="640px" alt="Group 1303-black" src="">
-</p>
-
 ## Description
 <p>
 サボっていた個人開発を頑張って、</br>
