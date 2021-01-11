@@ -6,7 +6,8 @@ function Header() {
       <div className="header">
           <dl>
               <dd>
-                  <a className="js-smooth-scroll" href="#Works">WORKS</a>
+                  <a className="js-smooth-scroll" href="#Development">
+                      DEVELOPMENT</a>
                   <a className="js-smooth-scroll" href="#Skill">SKILL</a>
                   <a className="js-smooth-scroll" href="#Profile">PROFILE</a>　
               </dd>

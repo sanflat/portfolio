@@ -56,7 +56,7 @@ function Wrapper() {
 
     return (
       <div className="wrapper">
-          <a id="Works" className="works">- WORKS -</a>
+          <a id="Development" className="development">- DEVELOPMENT -</a>
           <div className="margin">
               <Card className="card">
                   <Link href="https://master.d1ltu26ki4tmkb.amplifyapp.com/">
