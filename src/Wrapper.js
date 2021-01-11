@@ -48,8 +48,13 @@ function Wrapper() {
         { key: 1, label: 'Sass' },
         { key: 2, label: 'JQuery' },
     ]);
+    const [chipData3] = React.useState([
+        { key: 0, label: 'Ruby on Rails' },
+        { key: 1, label: 'Sass' },
+        { key: 2, label: 'Docker' },
+    ]);
 
-  return (
+    return (
       <div className="wrapper">
           <a id="Works" className="works">- WORKS -</a>
           <div className="margin">
@@ -125,6 +130,43 @@ function Wrapper() {
                       </Button>
                   </CardActions>
               </Card>
+              <Card className="card">
+                  <Link href="">
+                      <CardActionArea>
+                          <CardMedia
+                              className="card_media"
+                              image="./money_control.png"
+                              title="Contemplative Reptile"
+                          />
+                          <CardContent>
+                              <Typography gutterBottom variant="h5" component="h2">
+                                  money_control [※Updating]
+                              </Typography>
+                              <Typography variant="body2" color="textSecondary" component="p">
+                                  <Paper component="ul" className={classes.root}>
+                                      {chipData3.map((data) => {
+                                          return (
+                                              <li key={data.key}>
+                                                  <Chip
+                                                      label={data.label}
+                                                      className={classes.chip}
+                                                  />
+                                              </li>
+                                          );
+                                      })}
+                                  </Paper>
+                              </Typography>
+                          </CardContent>
+                      </CardActionArea>
+                  </Link>
+                  <CardActions>
+                      <Button href="https://github.com/sanflat/rails_money_control" size="small" color="LINK">
+                          <GitHubIcon />
+                          <p className="code_view">code view</p>
+                      </Button>
+                  </CardActions>
+              </Card>
+
           </div>
           <div className="skill-margin">
               <a id="Skill" className="skill">- SKILL -</a>
